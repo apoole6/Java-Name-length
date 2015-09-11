@@ -1,7 +1,5 @@
-import java.awt.Component;
 import java.util.Scanner;
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
+import javax.swing.JOptionPane;  /* Removed Component and JFrame*/
 
 public class JTest {
 
@@ -9,15 +7,15 @@ public class JTest {
 		  
 		  Scanner keyboard = new Scanner(System.in); /* Sets up scanner class for keyboard input */
 		  
-		 JFrame frame = new JFrame("Myframe"); /* Construct frame */
+		 
+		             /*JFrame setup removed*/
 		  
 		  
 		  
+		  String first_name = JOptionPane.showInputDialog(null, "What is your first name?"); /* Users' first name */
 		  
-		  String first_name = JOptionPane.showInputDialog(frame, "What is your first name?"); /* Users' first name */
 		  
-		  
-		  String last_name = JOptionPane.showInputDialog(frame, "What is your last name?"); /* Users' last name */
+		  String last_name = JOptionPane.showInputDialog(null, "What is your last name?"); /* Users' last name */
 		  
 		  
 		  String full_name;
